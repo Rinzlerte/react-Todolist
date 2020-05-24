@@ -7,7 +7,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-
 library.add(faTrash);
 
 export default class App extends Component {
@@ -64,13 +63,17 @@ export default class App extends Component {
 
   setUpdate = (text, key) =>{
     const items = this.state.items;
-    items.find(item =>{
-      if (item.key === key){
-        item.text = text;
-      }
-    })
+    const result = items.filter(item => item.key !== key);
+    // const newItems =  items.map(item =>{
+    //   if (item.key === key){
+    //     item.text = text;
+    //   }
+    // })
+    // this.setState({
+    //   items : newItems
+    // })
     this.setState({
-      items : items
+      items : result
     })
   }
 

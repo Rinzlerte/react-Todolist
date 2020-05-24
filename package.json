@@ -1,6 +1,7 @@
 {
   "name": "todolist-react",
   "version": "0.1.0",
+  "homepage": "https://rinzlerte.github.io/react-Todolist",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
