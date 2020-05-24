@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container{
+  width: 100%;
+  max-width: 450px;
+  margin: 40px auto;
+  position: relative;
+}
+
+#todolist-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todolist-form input {
+  border: 0;
+  background-color: white;
+  height: 40px;
+  margin: 20px;
+  font-size: 18px;
+  padding-left: 12px;
+  color: blue;
+}
+
+#todolist-form input::placeholder {
+  color: blue;
+}
+
+#todolist-form input:focus {
+  outline: none;
+}
+
+#todolist-form button {
+  height: 40px;
+  width: 75px;
+  border: 0;
+  cursor: pointer;
+}
+
+#todolist-form button:focus {
+  outline: none;
+}
+
+.list{
+  color: white;
+  margin: 20px auto;
+  width: 90%;
+  background-color: #1976D2;
+  height: 46px;
+  position: relative;
+}
+
+.list p{
+  padding: 10px;
+  position: relative;
+}
+
+.list span{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.faicons{
+  margin: 5px;
+  font-size: 15px;
+}
+
+.list p input{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.list p input:focus{
+  outline: none;
+}
